@@ -134,7 +134,7 @@ class _AuthPageState extends State<HomeScreen> {
               MaterialPageRoute(builder: (context) => UrgencyPage()),
             );
             },
-              child: new Container(
+              child: Container(
                 margin: EdgeInsets.only(left: 10, top: 40, right: 10,bottom: 0),
                 decoration: BoxDecoration(
                   boxShadow: [
@@ -150,9 +150,11 @@ class _AuthPageState extends State<HomeScreen> {
                   children: <Widget>[
                     Container(
                       margin: EdgeInsets.all(25.0),
-                      child: Icon(
-                        FontAwesomeIcons.laptopMedical,
-                        size: 60.0,
+                     // child: Image.asset('../assets/img/telefone.png', fit: BoxFit.cover),
+                      child: CircleAvatar(
+                        backgroundImage:NetworkImage('../assets/img/telefone.png'),
+                        radius: 30.0,
+                        backgroundColor: Colors.transparent,
                       ),
                     ),
                     Container(

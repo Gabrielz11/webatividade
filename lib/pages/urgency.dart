@@ -19,8 +19,10 @@ class _UrgencyStateInfo extends State<UrgencyPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Icon(
-                    FontAwesomeIcons.laptopMedical,
+                  CircleAvatar(
+                    backgroundImage:NetworkImage('../assets/img/telefone.png'),
+                    radius: 20.0,
+                    backgroundColor: Colors.transparent,
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20, top: 0, right: 0,bottom: 0),
@@ -112,8 +114,16 @@ class _UrgencyStateInfo extends State<UrgencyPage> {
                   ),
                 ),
                 Container(
+                      height: 40.0,
+                      width: 500,
+                      margin: EdgeInsets.only(left: 0, top: 10, right: 0,bottom: 10),
                       color: Colors.transparent,
-                      child: ElevatedButton(
+                      child: OutlinedButton(
+                            style: ElevatedButton.styleFrom(
+                              side: BorderSide(color: Colors.red, width: 1),
+                            primary: Colors.white, // background
+                            onPrimary: Colors.red, // foreground
+                            ),
                             onPressed: () {
                               // Respond to button press
                             },
