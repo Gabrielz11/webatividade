@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:webatividade/pages/urgency.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -125,45 +126,54 @@ class _AuthPageState extends State<HomeScreen> {
                 ],
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(left: 10, top: 40, right: 10,bottom: 0),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  new BoxShadow(
-                    color: Colors.black26,
-                    blurRadius: 25.0,
-                  )
-                ],
-                color: Colors.white,
-              ),
-              alignment: Alignment.center,
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.all(25.0),
-                          child: Icon(
-                            FontAwesomeIcons.laptopMedical,
-                            size: 60.0,
-                            color: const Color(0xFFF11932),
+            GestureDetector(
+            onTap: (){
+            print("Container clicked");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => UrgencyPage()),
+            );
+            },
+              child: new Container(
+                margin: EdgeInsets.only(left: 10, top: 40, right: 10,bottom: 0),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    new BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 25.0,
+                    )
+                  ],
+                  color: Colors.white,
+                ),
+                alignment: Alignment.center,
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.all(25.0),
+                      child: Icon(
+                        FontAwesomeIcons.laptopMedical,
+                        size: 60.0,
+                        color: const Color(0xFFF11932),
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(25.0),
-                    child: Column(
-                      children: <Widget>[
-                        GestureDetector(
-                          child: Text(
-                            'Urgência',
-                            textAlign: TextAlign.left,
-                            style:
-                            TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.teal),
+                    Container(
+                      margin: EdgeInsets.all(25.0),
+                      child: Column(
+                        children: <Widget>[
+                          GestureDetector(
+                            child: Text(
+                              'Urgência',
+                              textAlign: TextAlign.left,
+                              style:
+                              TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.teal),
+                            ),
                           ),
-                        ),
-
-                      ],
+                          Text('Situações de risco, urgência e emergência'),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],
