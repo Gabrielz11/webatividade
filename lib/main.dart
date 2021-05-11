@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:webatividade/pages/home.dart';
-
 void main() {
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   // root da aplicação.
   @override
