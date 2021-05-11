@@ -153,7 +153,6 @@ class _AuthPageState extends State<HomeScreen> {
                       child: Icon(
                         FontAwesomeIcons.laptopMedical,
                         size: 60.0,
-                        color: const Color(0xFFF11932),
                       ),
                     ),
                     Container(
