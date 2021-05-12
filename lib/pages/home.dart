@@ -16,7 +16,7 @@ class _AuthPageState extends State<HomeScreen> {
         body: ListView(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.only(left: 0, top: 0, bottom: 0),
+              margin: EdgeInsets.only(left: 0, top: 0, bottom: 10),
               height: 400,
               decoration: BoxDecoration(
                 image: DecorationImage(
