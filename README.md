@@ -7,10 +7,11 @@ não é necessário implementar, por exemplo, lógica e acesso a dados.
 Sua resposta para esta atividade deve ser um documento que apresenta as telas e descreve seu funcionamento. 
 Publique o código-fonte do seu aplicativo no Github e inclua a URL do repositório na sua resposta.
 
-Introdução
+#Introdução:
+
 O aplicativo usado como referência no trabalho foi o Saúde Já Curitiba, devido a quantidade de sistemas crescendo na área da saúde e por se tratar de uma área bastante movimentada, foi escolhido esse App para replicar as suas páginas como incentivo de aprendizado.
 
-O que é o Saúde Já Curitiba?
+#O que é o Saúde Já Curitiba?
 
 A Prefeitura Municipal de Curitiba disponibiliza a todos os curitibanos o aplicativo Saúde Já Curitiba. Este aplicativo permite aos cidadãos realizar o agendamento de atendimento clínico e odontológico nas unidades básicas de saúde do município sem a necessidade de comparecimento presencial para tal, de forma simples, rápida e de qualquer lugar, contribuindo para a redução das filas e proporcionando maior comodidade aos cidadãos.
 É um aplicativo que lhe possibilita o agendamento do primeiro atendimento na Unidade Municipal de Saúde, porta de entrada do Sistema Único de Saúde (SUS) no município de Curitiba. O aplicativo está disponível para Android, iOS e Web.
